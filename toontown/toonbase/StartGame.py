@@ -1,6 +1,16 @@
 import traceback
 
 
+import __builtin__
+import time
+import os
+import sys
+import random
+class game(object):
+    name = 'toontown'
+    process = 'client'
+__builtin__.game = game()
+loadPrcFile('config/toontown.prc')
 
 try:
     run()
